@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Reservation Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .clear {
+      background-color: #f44336;
+    }
+
+    .clear:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <input type="address" id="address" name="address" required>
+
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="city">City</label>
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="gorakhpur">gorakhpur</option> <option value="mumbai">mumbai</option>
+                            <option value="kolkata">kolkata</option><option value="pune">pune</option>
+                            <option value="jaipur">jaipur</option>
+                             </select>
+
+    <input type="button" value="Submit"/>  
+     <input type="button" value="Clear"/>  
